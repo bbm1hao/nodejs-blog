@@ -1,0 +1,24 @@
+<h2><%= title %></h2>
+<p>Welcome to <%= title %></p>
+<% if(success) {%>
+	<div class="alert alert-success"> 
+		<%= success  %>
+	</div>
+<% } %>
+
+<% if(error) {%>
+	<div class="alert alert-error"> 
+		<%= error  %>
+	</div>
+<% } %>
+
+
+<div class="post-area">
+	<form id="post-form" action="/post" method="post">
+		<input type="text" name="post" class="post-input" />
+		<input type="submit" name="submitted" class="post-submit" />
+	</form>
+</div>
+
+
+
